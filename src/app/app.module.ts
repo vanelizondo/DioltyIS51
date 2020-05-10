@@ -3,12 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import {ToastModule} from './toast/toast.module';
+import { LoginComponent } from './login/login.component';
+
+import {AppRoutes} from './app.routes';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ToastModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
