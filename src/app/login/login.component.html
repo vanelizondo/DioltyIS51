@@ -1,19 +1,34 @@
+<head class='login-grid'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diolty</title>
+</head>
+<body>
+<nav class="navbar navbar-default" id="index-navbar">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+              <p>D I O L T Y</p>
+          </a>
+      </div>
+  </div>
+</nav>
 <div class="login-grid">
-    <div></div>
-    <form class="login-form box-shadow">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Username</label>
-          <input name="z" [(ngModel)]="user.username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Username">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input name="y" [(ngModel)]="user.password" type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-        </div>
-        <button type="submit" class="btn btn-primary" (click)="login(user)">Login</button>
+  <div class="form">
+      <form class="registerForm">
+          <input type="text" placeholder="username" />
+          <input type="text" placeholder="password" />
+          <button>Create</button>
+          <p class="message">Already Registered? <a href="#">Login</a></p>
       </form>
-      <div></div>
+      <form class=" loginForm">
+        <input type="text" placeholder="username" />
+        <input type="text" placeholder="password" />
+        <button (click)="login(user)">Login</button>
+        <p class="message">Not Registered?<a href="#">Register</a></p>
+</form>
+
+  </div>
 </div>
+</body>
