@@ -7,11 +7,15 @@ import {ToastModule} from './toast/toast.module';
 import { LoginComponent } from './login/login.component';
 
 import {AppRoutes} from './app.routes';
+import { EmployeesComponent } from './employees/employees.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeesComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
